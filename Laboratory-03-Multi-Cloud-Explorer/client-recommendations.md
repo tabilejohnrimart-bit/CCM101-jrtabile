@@ -1,6 +1,6 @@
 # Client Recommendations
 
-## Checkpoint 4 – Cloud Platform Recommendation Challenge
+Cloud Platform Recommendation Challenge
 
 ### Client A – Startup Company
 
