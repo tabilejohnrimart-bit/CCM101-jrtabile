@@ -64,7 +64,7 @@ AWS is a suitable choice for the global e-commerce company because it provides g
 | **Client C – AI Research Company** | Artificial Intelligence, Machine Learning, and high-performance computing | **Google Cloud Platform** |
 | **Client D – Global E-Commerce Company** | Global availability and automatic scaling | **AWS** |
 
-## Checkpoint 6 – Multi-Cloud Decision Matrix
+## Multi-Cloud Decision Matrix
 
 | Business Requirement | Recommended Platform | Justification |
 |---|---|---|
