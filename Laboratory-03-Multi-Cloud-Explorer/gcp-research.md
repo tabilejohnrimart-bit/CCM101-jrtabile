@@ -55,6 +55,3 @@ Google Cloud can be used by enterprises for:
 - Big data processing
 - Global application deployment
 - Cloud-native applications
-![Google Cloud Platform Homepage](screenshots/gcp-homepage.png)
-
-*Figure 1. Google Cloud official homepage*
