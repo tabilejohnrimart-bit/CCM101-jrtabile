@@ -63,3 +63,14 @@ AWS is a suitable choice for the global e-commerce company because it provides g
 | **Client B – University** | Windows Server, Microsoft 365, and Active Directory | **Microsoft Azure** |
 | **Client C – AI Research Company** | Artificial Intelligence, Machine Learning, and high-performance computing | **Google Cloud Platform** |
 | **Client D – Global E-Commerce Company** | Global availability and automatic scaling | **AWS** |
+
+## Checkpoint 6 – Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| **Startup Company** | **AWS** | AWS provides a wide range of services that can support a startup's mobile application while allowing resources to scale as the company grows. |
+| **Enterprise Organization** | **AWS** | AWS provides a broad portfolio of cloud services, global infrastructure, security features, and scalability that can support different enterprise workloads. |
+| **Microsoft Environment** | **Microsoft Azure** | Azure provides strong integration with Microsoft technologies such as Windows Server, Microsoft 365, and Microsoft Entra ID. |
+| **AI / Machine Learning** | **Google Cloud Platform** | Google Cloud provides strong AI and machine learning capabilities, including services and infrastructure designed for developing and deploying AI applications. |
+| **Kubernetes Deployment** | **Google Cloud Platform** | Google Cloud provides Google Kubernetes Engine (GKE), a managed Kubernetes service for deploying and managing containerized applications. |
+| **Global Web Application** | **AWS** | AWS provides global infrastructure and services such as EC2, Elastic Load Balancing, Auto Scaling, and CloudFront that can support highly available web applications. |
