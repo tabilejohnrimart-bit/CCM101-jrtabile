@@ -1,0 +1,42 @@
+
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: ccm101-mariadb
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wpuser
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD:?Set MARIADB_PASSWORD in .env}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Set MARIADB_ROOT_PASSWORD in .env}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - wordpress_network
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    container_name: ccm101-wordpress
+    restart: unless-stopped
+    depends_on:
+      mariadb:
+        condition: service_started
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: mariadb:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: ${MARIADB_PASSWORD:?Set MARIADB_PASSWORD in .env}
+    volumes:
+      - wordpress_data:/var/www/html
+    networks:
+      - wordpress_network
+
+volumes:
+  mariadb_data:
+  wordpress_data:
+
+networks:
+  wordpress_network:
+    driver: bridge
